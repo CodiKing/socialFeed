@@ -1,14 +1,22 @@
 
 import React, { useState } from 'react';
 import displayPosts from './displayPosts';
+import createPost from './createPost';
 
 function App() {
 
-  const [entries,setEntries] = useState([])
+  const [entries,setEntries] = useState([{name:''},{post:''}])
+
+  function addNewPost(entry){
+    let tempEntries=[...entries, entry];
+    setEntries(tempEntries)
+  }
 
   return (
     <div>
-     <displayPosts parentEntries={entries}/>
+      <createPost addNewPostToFeed={addNewPost} />
+      <displayPosts parentEntries={entries}/>
+     <post/>
     </div>
   );
 }
