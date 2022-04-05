@@ -5,8 +5,6 @@ const Post = (props) => {
         <thead>
           <tr>
             <th>Name</th>
-
-            
             <th>Post</th>
           </tr>
         </thead>

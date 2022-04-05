@@ -17,7 +17,8 @@ function App() {
     <div>
       <CreatePost addNewPost={addNewPost} />
       <Post parentEntries={entries}/>
-     <post/>
+      <DisplayPosts parentEntries={entries}/>
+     
     </div>
   );
 }
