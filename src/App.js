@@ -1,9 +1,14 @@
-import React from "react";
+
+import React, { useState } from 'react';
+import displayPosts from './displayPosts';
 
 function App() {
+
+  const [entries,setEntries] = useState([])
+
   return (
     <div>
-      Hello World
+     <displayPosts parentEntries={entries}/>
     </div>
   );
 }
