@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const createPost = (props) => {
+const CreatePost = (props) => {
 
     const [name, setName] = useState('');
     const [post, setPost] = useState('');
@@ -14,7 +14,7 @@ const createPost = (props) => {
             post: post
         };
         console.log(newEntry);
-        props.addNewPostToFeed(newEntry)
+        props.addNewPost(newEntry)
     }
 
     return ( 
@@ -28,4 +28,4 @@ const createPost = (props) => {
      );
 }
  
-export default createPost;
+export default CreatePost;

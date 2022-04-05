@@ -1,5 +1,5 @@
 
-const displayPosts = (props) => {
+const DisplayPosts = (props) => {
     return (  
     <table>
         <thead>
@@ -11,13 +11,14 @@ const displayPosts = (props) => {
           {props.parentEntries.map((entry,index) =>{
             return(
               <tr>
-                <td>(entry)
-                </td>
+                <td>{index + 1}</td>
+                <td>(entry.name)</td>
+                <td>(entry.post)</td>
               </tr>
-            )
+            );
           })}
         </tbody>
       </table> );
 }
  
-export default displayPosts;
+export default DisplayPosts;

@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react';
-import displayPosts from './displayPosts';
-import createPost from './createPost';
+import DisplayPosts from './displayPosts';
+import CreatePost from './createPost';
+import Post from './Post';
 
 function App() {
 
@@ -14,8 +15,8 @@ function App() {
 
   return (
     <div>
-      <createPost addNewPostToFeed={addNewPost} />
-      <displayPosts parentEntries={entries}/>
+      <CreatePost addNewPost={addNewPost} />
+      <Post parentEntries={entries}/>
      <post/>
     </div>
   );
