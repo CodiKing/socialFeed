@@ -6,7 +6,7 @@ import Post from './Post';
 
 function App() {
 
-  const [entries,setEntries] = useState([{name:''},{post:''}])
+  const [entries,setEntries] = useState([{name:'Codi',post:'Hello'}])
 
   function addNewPost(entry){
     let tempEntries=[...entries, entry];
@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <CreatePost addNewPost={addNewPost} />
-      <Post parentEntries={entries}/>
+      
       <DisplayPosts parentEntries={entries}/>
      
     </div>
