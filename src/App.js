@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import DisplayPosts from './displayPosts';
 import CreatePost from './createPost';
-import Post from './Post';
+import NavBar from './navBar';
+
 
 function App() {
 
@@ -15,9 +16,14 @@ function App() {
 
   return (
     <div>
-      <CreatePost addNewPost={addNewPost} />
+      <header>
+      <NavBar/>
+      </header>
+      <body>
+        <CreatePost addNewPost={addNewPost} />
+        <DisplayPosts parentEntries={entries}/>
+        </body>
       
-      <DisplayPosts parentEntries={entries}/>
      
     </div>
   );
