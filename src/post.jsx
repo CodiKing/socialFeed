@@ -1,5 +1,7 @@
 
 import React, { useState } from 'react';
+import './App.css'
+
 
 
 const Post = (props) => {
@@ -29,6 +31,7 @@ const Post = (props) => {
       <h2>{props.entry.name}</h2>
       <body>{props.entry.post}</body>
       <button className={buttonClass} onClick={handleClick}>Like</button>
+       
       <button className={buttonClass1} onClick={handleClick1}>Dislike</button>
      
 

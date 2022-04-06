@@ -1,0 +1,28 @@
+
+.header {
+    background-color: rgb(156, 206, 189);
+    place-content: left;
+}
+
+button{
+    color: white;
+    padding-inline-end: 0%;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+.active{
+    background-color: rgb(21, 196, 196);
+}
+
+.inactive{
+    background-color: rgb(124, 122, 122);
+}
+
+.navBar{
+    background-color: rgb(183, 240, 240);
+    text-align: left;
+    
+}

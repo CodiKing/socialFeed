@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import DisplayPosts from './displayPosts';
 import CreatePost from './createPost';
 import NavBar from './navBar';
+import './App.css'
+
 
 
 function App() {
